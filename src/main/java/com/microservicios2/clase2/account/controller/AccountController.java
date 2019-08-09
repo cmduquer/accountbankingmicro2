@@ -27,7 +27,7 @@ public class AccountController {
 	
 	@PostMapping(value = "/account")
 	public Account save (@RequestBody Account account){
-		Notification notification = new Notification("Account is created", "admin@dineshonjava.com", "9852XXX122");
+		Notification notification = new Notification("Account is created", "cmduquer@gmail.com", "9852XXX122");
 		notificationService.sendNotification(notification);
 		return accountRepository.save(account);
 	}
